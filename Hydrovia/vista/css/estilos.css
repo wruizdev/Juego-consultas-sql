@@ -1,0 +1,1032 @@
+
+@font-face {
+    font-family: 'HAL Timezone';
+    src: url('HALTimezone-Regular.eot');
+    src: local('HAL Timezone Regular'), local('HALTimezone-Regular'),
+    url('HALTimezone-Regular.eot?#iefix') format('embedded-opentype'),
+    url('HALTimezone-Regular.woff2') format('woff2'),
+    url('HALTimezone-Regular.woff') format('woff'),
+    url('HALTimezone-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url('fonts/MabryPro-Regular.ttf') format('truetype');
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'HAL Timezone Regular';
+    color: #C47200;
+
+}
+
+body.con-fondo {
+    background-image: url('../img/fondo2.jpg');
+}
+
+body.con-fondo2{
+    background-image: url('../img/fondo2.jpg');
+
+}
+
+body.sin-fondo {
+    background: none; /* Sin fondo */
+    background-color: #ffeed4;
+}
+
+#fondo_formulario {
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e3b75a;
+    border: 3px solid #c59225;
+
+    /*border: 2px solid black;*/
+
+}
+
+
+#fondo_formulario2 {
+    border-radius: 8px;
+    height: 180px;
+    padding-bottom: 40px;
+    margin: 0; /* Márgenes uniformes */
+    position: relative; /* Fija en la parte superior de la pantalla */
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    background-color: #F9F1DE;
+    padding: 20px;
+
+}
+
+#fondo_formulario3 {
+    border: 3px solid #c59225;
+    border-radius: 25px;
+    width: 700px;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /*background-color: #F9F1DE;*/
+    background-color: #e3b75a;
+
+
+}
+
+
+#fondo_formulario4 {
+    border-radius: 20px;
+    width: 700px;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e3b75a;
+    border: 3px solid #c59225;
+
+    /*border: 2px solid black;*/
+
+}
+
+
+#titulo_capitulo{
+    text-align: left;
+
+
+}
+
+#titulo_capitulo0{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 2em;
+    color: black;
+    margin-bottom: 5px;
+
+}
+
+#parrafo_capitulo0{
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #1c1b1b;
+
+}
+
+#parrafo_capitulo{
+    text-align: left;
+    padding-top: 2px;
+    width: 80%;
+}
+
+#fondo_capitulo {
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    width: 600px;
+    padding: 20px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+    float: left;
+    margin-top: -10px;
+}
+
+#fondo_capitulo_consultas{
+    background-color: white;
+    width: 650px;
+    padding: 20px;
+    margin-left: 0;
+    padding-bottom: 40px;
+    float: left;
+    background-color: #F9F1DE;
+    height: 100%;
+    position: fixed; /* Fija en la parte superior de la pantalla */
+    top: 200px;
+    left: 0;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    text-align: left;
+}
+
+#texto_capitulo_consultas{
+    margin-left: 30px;
+
+}
+
+
+#texto_consultas{
+}
+
+#subtitulo_capitulo{
+    color:black;
+    margin-left: 30px;
+    padding-top: 0;
+    padding-right: 20px;
+
+}
+
+
+
+#boton_aceptar_capitulo{
+    margin-left: 30px;
+    padding: 10px 20px;
+    background-color: #C47200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0;
+    width: 100%;
+}
+
+
+#boton_aceptar2{
+    margin-left: 522px;
+
+}
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px; /* Espaciado entre los inputs */
+    padding: 10px; /* Aumenta el padding en todos los lados del formulario */
+    padding-left: 30px; /* Aumenta el margen izquierdo */
+    padding-right: 30px; /* Aumenta el margen derecho */
+    border-radius: 5px;
+    font-family: 'Mabry Pro', sans-serif;
+
+}
+
+form h1 {
+    text-align: center;
+    font-size: 31.6px;
+    color: black;
+    font-family: 'HAL Timezone Regular';
+
+
+}
+
+h3{
+    color:black;
+    font-family: 'HAL Timezone Regular';
+
+}
+
+
+
+/*#icono-corazon {*/
+/*    position: fixed; !* Fijo en la pantalla *!*/
+/*    top: 10px; !* Espaciado desde la parte superior *!*/
+/*    right: 10px; !* Espaciado desde el lado derecho *!*/
+/*    font-size: 24px; !* Tamaño del corazón *!*/
+/*    color: black; !* Color del corazón *!*/
+/*    padding: 5px 10px; !* Espaciado interno *!*/
+/*    border-radius: 5px; !* Bordes redondeados *!*/
+/*}*/
+
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-right: 80px; /* Espaciado específico debajo de cada input */
+    font-family: 'Mabry Pro', sans-serif;
+    background-color: #F9F1DE;
+    border-color: grey;
+    border-radius: 25px;
+
+
+
+
+
+}
+
+input[type="submit"] {
+    background-color: #C47200;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    font-family: 'Mabry Pro', sans-serif;
+    border-radius: 25px;
+
+
+}
+
+
+input[type="submit"]:hover {
+    background-color: #A05D00;
+
+}
+
+
+button[type="submit"] {
+    background-color: #C47200;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    font-family: 'Mabry Pro', sans-serif;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 5px;
+
+
+}
+
+button[type="submit"]:hover {
+    background-color: #A05D00;
+}
+
+#empezar{
+    object-fit: contain;
+    width: 40%;
+    margin-left: 200px;
+}
+
+
+span {
+    font-size: 12px;
+    color: red;
+}
+
+#aun_no_tienes_cuenta, #ya_tienes_cuenta, #que_te_gustaria_hacer{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-family: 'HAL Timezone Regular';
+}
+
+
+.overlay-naranja {
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 165, 0, 0.33); /* Naranja translúcido */
+    z-index: 1; /* Debajo del formulario */
+    justify-items: center;
+}
+
+
+/*celdas de la tabla (cuerpo y encabezados) */
+.tabla-historial th,
+.tabla-historial td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+/* encabezados tabla */
+.tabla-historial th {
+    background-color: #a05d00;
+    color: white;
+    font-size: 1.1em;
+}
+
+
+/* Estilo para las filas del cuerpo*/
+.tabla-historial tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.tabla-historial tr:hover {
+    background-color: #ddd;
+}
+
+
+/*celdas de puntuación */
+.tabla-historial td:nth-child(3) {
+    font-weight: bold;
+}
+
+
+
+#mensaje_juego_perdido {
+    text-align: center;
+    color: black;
+    top:0;
+    left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#mensaje_juego_completado {
+    text-align: center;
+}
+
+
+
+
+/* Subtítulo */
+#subtitulo_capitulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor para cada consulta */
+.consulta-container {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+    align-content: center;
+    padding-top: 5px;
+}
+
+/* Label al lado de los botones radiales */
+.consulta-container label {
+    margin-left: 10px;
+    margin-right: 1px;
+    width: 100px;
+    padding: 10px;
+}
+
+/* Cambiar el color de las etiquetas (Usuario y Contraseña) a negro */
+.etiqueta {
+    color: black; /* Establece el color de las etiquetas a negro */
+}
+
+
+/* Cuadro de texto no editable */
+.consulta-cuadro {
+    margin-left: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%; /* Se ajusta al tamaño del contenedor */
+
+}
+
+
+
+/*.capitulo-imagen {*/
+/*    position: fixed;*/
+/*    bottom: 0; !* Pegada al borde inferior *!*/
+/*    right: 0; !* Pegada al borde derecho *!*/
+/*    padding-right: 0;*/
+/*    width: 60vw; !* Ocupa la mitad del ancho de la pantalla *!*/
+/*    height: 60vh; !* Ocupa la mitad de la altura de la pantalla *!*/
+/*    object-fit: contain; !* Asegura que la imagen no se distorsione *!*/
+/*    z-index: 1000; !* Asegura que esté encima de otros elementos *!*/
+/*}*/
+
+/* Estilos para la imagen que ocupa la mitad derecha */
+.frame-derecho {
+    position: absolute; /* Fija la imagen en la pantalla */
+    top: 0; /* Empieza desde la parte superior */
+    right: 0; /* Pegada al borde derecho */
+    width: 50%; /* Ocupa la mitad del ancho de la pantalla */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    z-index: 1; /* Imagen debajo del contenido */
+}
+
+/* La imagen dentro del contenedor */
+.frame-derecho img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 100%; /* Ajusta la imagen a la altura del contenedor */
+    object-fit: cover; /* La imagen cubre el contenedor sin distorsionarse */
+}
+
+
+
+/* Contenedor del texto del capítulo */
+#fondo_formulario2 {
+    border-radius: 8px;
+    height: auto; /* Ajusta la altura según el contenido */
+    padding: 20px;
+    position: relative; /* Mantiene en flujo normal de la página */
+    z-index: 2; /* Está sobre la imagen */
+    background-color: #F9F1DE;
+    width: 100%; /* Asegura que el contenedor ocupe el espacio completo disponible */
+}
+
+/* Título del capítulo */
+#titulo_capitulo {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.8em; /* Ajuste del tamaño de la fuente */
+}
+
+
+/* Párrafo del capítulo */
+#parrafo_capitulo {
+    text-align: left;
+    padding-top: 2px;
+    width: 80%;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Ajuste de la imagen en dispositivos más pequeños */
+    .frame-derecho {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        height: auto; /* La altura se ajusta proporcionalmente */
+    }
+
+    /* El contenedor del formulario también debe ajustarse en pantallas pequeñas */
+    #fondo_formulario2 {
+        padding: 10px; /* Menos padding en pantallas pequeñas */
+    }
+}
+
+
+#volver_jugar{
+    width: 300px;
+    justify-items: center;
+    margin-left: 25px;
+
+}
+
+#volver_jugar_derrota{
+    width: 300px;
+    justify-items: center;
+    margin-left: 200px;
+    margin-top: 0;
+
+}
+
+/*-------------------------------------------------------------------------------*/
+
+
+/* Contenedor izquierdo (mitad izquierda) */
+#contenedor_mision {
+    width: 50%; /* Ocupa la mitad izquierda */
+    padding: 20px;
+    background-color: #ffeed4;
+    box-sizing: border-box;
+    padding: 40px;
+    top: 50px;
+    left: 50px;
+}
+
+/* Título del capítulo */
+#titulo_mision {
+    font-size: 2em;
+    color: black;
+    text-align: left    ;
+    padding-right: 50px;
+    padding-left: 20px;
+    margin-top: 55px;
+    margin-bottom: 5px;
+
+}
+
+/* Párrafo de la misión */
+#parrafo_mision {
+    font-size: 1em;
+    color: #C47200;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 20px;
+    line-height: 1.3;
+    padding-top: 0;
+}
+
+/* Contenedor de las consultas */
+#contenedor_consultas {
+    margin-top: 20px;
+}
+
+#subtitulo_consultas {
+    font-size: 1.3em;
+    color: black;
+
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    padding-right: 50px;
+    padding-left: 20px;
+    line-height: 1.3;
+    padding-top: 0;
+}
+
+.consulta-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.consulta-container input {
+    margin-right: 10px;
+}
+
+.consulta-cuadro {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+/* Botón de consulta */
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #C47200;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+button[type="submit"]:hover {
+    background-color: #A05D00;
+}
+
+/* Contenedor de la imagen (mitad derecha) */
+#contenedor_imagen {
+    width: 0%; /* Ocupa la mitad de la pantalla */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    position: absolute; /* Fija la imagen en la pantalla */
+    top: 0; /* Asegura que comience desde la parte superior */
+    right: 0; /* Mueve el contenedor hacia la derecha */
+    box-shadow: 0px 4px 8px rgba(0.1, 0.1, 0.1, 0.1); /* Sombra sutil */
+    z-index: -5; /* Valor bajo para asegurarse de que la imagen quede detrás del modal */
+
+}
+
+/* Estilo de la imagen dentro del contenedor */
+#contenedor_imagen img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+
+
+/* Contenedor del formulario (mitad izquierda) */
+#contenedor_formulario {
+    width: 50%; /* Ocupa la mitad izquierda de la pantalla */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+    background-color: #ffeed4; /* Fondo del formulario */
+    position: fixed; /* Fijado en la pantalla */
+    top: 0; /* Se alinea al principio de la pantalla */
+    left: 0; /* Se alinea a la izquierda */
+}
+
+
+#contenedor_mision {
+    width:100%;
+    padding: 20px;
+    background-color: #ffeed4;
+}
+
+
+/*----------------------- RESPONSIVE -----------------------------------------------------------------*/
+/* Responsividad: en pantallas pequeñas, ajustamos la disposición */
+@media (max-width: 768px) {
+    #contenedor_formulario {
+        flex-direction: column;
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+
+
+    #contenedor_mision {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+}
+
+
+/*----------------------- RESPONSIVE -----------------------------------------------------------------*/
+
+.consulta-cuadro {
+    margin-left: 0; /* Elimina el margen izquierdo */
+    padding: 2px 5px; /* Reduce el padding interno */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    min-height: 40px; /* Altura mínima */
+    width: 100%; /* Se ajusta al tamaño del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    white-space: pre-wrap; /* Mantiene saltos de línea y espacios */
+    overflow-wrap: break-word; /* Permite dividir palabras largas */
+    font-size: 14px; /* Ajusta el tamaño de fuente si es necesario */
+    line-height: 1.4; /* Espaciado entre líneas */
+}
+
+
+/* Para hacer que el texto crezca con más contenido */
+.consulta-cuadro p {
+    margin: 0;
+    font-size: 1rem; /* El tamaño base del texto */
+    line-height: 1.4;
+    word-wrap: break-word; /* Asegura que el texto largo se ajuste */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #fondo_capitulo_consultas {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .consulta-container {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .consulta-container label {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .consulta-cuadro {
+
+    }
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* Estilo del icono de salir */
+.icono-salir {
+    display: inline-block;
+    margin-top: 0;
+    text-align: center;
+    cursor: pointer;
+    top: 20px;
+    font-size: 22px;  /* Tamaño del icono */
+    color: #C47200;  /* Color del icono */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Transición para el tamaño y color */
+}
+
+/* Efecto hover: aumenta el tamaño y cambia el color */
+.icono-salir:hover {
+    transform: scale(1.1);  /* Aumenta el tamaño del icono */
+    color: black;  /* Cambia el color del icono al pasar el mouse */
+}
+
+/* Asegurando que el icono tiene el tamaño correcto */
+.icono-salir i {
+    font-size: 22px;  /* Tamaño correcto del icono */
+    display: inline-block; /* Para asegurarse de que el ícono se ajuste al tamaño del contenedor */
+}
+
+
+/*------------ ICONO cora --------------------------------*/
+/* Contenedor del texto de puntos de vida */
+#puntos-vida {
+    font-size: 20px;
+    color: black; /* Color del texto */
+    font-weight: bold; /* Para hacerlo más visible */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrado horizontal */
+    position: fixed; /* Fija el contenedor en la pantalla */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 44%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste fino para centrar completamente */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    margin-top: 35px;
+}
+
+/* Estilo del ícono del corazón */
+#puntos-vida i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    font-size: 30px; /* Tamaño del ícono de corazón */
+    color: #C47200; /* Color rojo para el corazón */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo cuando el cursor pasa sobre el corazón */
+#puntos-vida i:hover {
+    color: #A05D00; /* Color más oscuro del corazón cuando se pasa el cursor */
+}
+
+/* Animación simple de pulso */
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Agranda el corazón */
+    }
+    100% {
+        transform: scale(1); /* Vuelve a su tamaño original */
+    }
+}
+
+/* Clase para activar la animación */
+#puntos-vida.pulsando i {
+    animation: pulso 0.3s ease-in-out;
+}
+
+
+
+
+
+/* Contenedor de la imagen (mitad derecha) */
+#contenedor_imagen {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.consultar-btn {
+    position: fixed; /* Fija el botón en relación a la ventana */
+    top: 10px; /* Ajusta la posición desde la parte superior */
+    right: -30px; /* Ajusta la posición desde la parte derecha */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+    border-radius: 25px;
+}
+
+/* Estilo adicional para el botón */
+.consultar-btn input {
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 14px; /* Tamaño del texto */
+    background-color: #C47200; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Manita al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 250px; /* Ancho del botón */
+    height: 45px; /* Alto del botón */
+    border-radius: 25px;
+
+}
+
+.consultar-btn input:hover {
+    background-color: #A05D00; /* Color al pasar el ratón */
+}
+
+
+/*----------------- MODAL ------------------------------------------------*/
+/* Estilos del modal */
+/* Contenedor del modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+}
+
+/* Contenido del modal */
+.modal-contenido {
+    position: absolute;
+    background-color: #fefefe;
+    z-index: 10000; /* Máxima prioridad visual */
+    top: 50%; /* Posiciona desde el 50% de la pantalla */
+    left: 50%; /* Posiciona desde el 50% de la pantalla */
+    transform: translate(-50%, -50%); /* Centra el modal */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out; /* Aparece suavemente */
+}
+
+/* Animación del modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Inicia transparente */
+    }
+    to {
+        opacity: 1; /* Aparece completamente */
+    }
+}
+
+/* Imagen dentro del modal */
+.modal-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* Botón de cerrar */
+.cerrar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Desactiva el scroll del body cuando el modal está abierto */
+body.modal-abierto {
+    overflow: hidden; /* Desactiva el scroll */
+}
+
+
+
+
+/* Estilo para el mensaje de error */
+.mensaje-error {
+    color: red; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Hace el texto más prominente */
+    background-color: #ffe6e6; /* Fondo rojo claro para destacar */
+    border: 1px solid #ff0000; /* Borde rojo */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 15px 0; /* Espaciado externo */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+/* Estilo para el mensaje de éxito */
+#respuesta_correcta {
+    color: green; /* Color del texto */
+    font-size: 14px; /* Tamaño de letra ajustado */
+    font-weight: bold; /* Hace el texto más prominente */
+    background-color: #e6ffe6; /* Fondo verde claro */
+    border: 1px solid #00b300; /* Borde verde */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-left: 25px;
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-family: 'Mabry Pro', sans-serif;
+    width: 615px;
+    margin-bottom: 0;
+
+
+}
+
+
+@keyframes palpitante {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }  /* Escala más sutil */
+    100% { transform: scale(1); }
+}
+
+
+.boton-animado {
+    animation: palpitante 0.6s ease-in-out infinite; /* Duración como estaba antes */
+}
+
+
+.btn_enviar{
+    width: 50px;
+    margin-left: 150px;
+
+}
+
+
+/* Contenedor para el icono de casa y el texto de nivel */
+#casa_nivel {
+    display: flex;              /* Alinea los elementos de manera horizontal */
+    align-items: center;        /* Centra verticalmente los elementos */
+    gap: 238px;                  /* Espacio entre el icono y el texto */
+    width: 90%;
+    height: 30px;
+    opacity: 100%;
+}
+
+
+/* Estilo para el texto del nivel de dificultad */
+#casa_nivel p {
+    font-family: 'Mabry Pro', sans-serif;
+    font-size: 16px;
+    color: black;
+    margin: 0;                  /* Elimina márgenes extra */
+}
+
+#color{
+    background-color: aqua;
+    height: 20px;
+}
+
+/* Estilos para el contenedor del menú superior */
+#contenedor_menu_superior {
+    display: flex;  /* Alinea los elementos dentro del contenedor */
+    justify-content: space-between;  /* Distribuye los elementos a lo largo de la línea */
+    align-items: center;  /* Alinea verticalmente los elementos */
+    background-color: #d0d0d0;  /* Fondo del contenedor */
+    border-radius: 8px;  /* Bordes redondeados */
+    padding: 10px 20px;  /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    margin-bottom: 20px;  /* Espacio entre el menú y el siguiente contenido */
+    margin-left: 20px;
+    height: 40px;
+    width: 600px;
+
+}
+
+
+/* Botón de consulta */
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #C47200;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+body.con-fondo3{
+    background-image: url('../img/derrota.jpg');
+
+}
+
+div label {
+    font-size: 14px; /* Aplica el tamaño de fuente tanto al input como al label */
+}
+
+
+#form-juego-perdido {
+    position: absolute;
+    top: 90px; /* Ajusta para mover hacia arriba o abajo */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Corrige la posición para centrar */
+    width: 80%; /* Ajusta el ancho del formulario según tu diseño */
+    max-width: 700px; /* Limita el tamaño máximo */
+    background-color: #e3b75a; /* Asegura que el fondo sea visible */
+    padding: 20px; /* Espaciado interno para el contenido */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    border: 3px solid #c59225; /* Opcional, para darle un marco */
+}
